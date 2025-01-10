@@ -6,6 +6,11 @@ A construção dessa calculadora foi feita apenas usando `Numpy` para os cálcul
 
 Rodar o programa
 ```
+git clone https://github.com/victor-nasc/Simplex-Revisado.git
+cd Simplex-Revisado
+```
+
+```
 pip install numpy tk
 python3 main.py
 ```
