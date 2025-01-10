@@ -1,3 +1,4 @@
+
 import tkinter as tk
 from tkinter import messagebox
 import numpy as np
@@ -25,9 +26,9 @@ def solve_problem():
 
         # calcula
         A_eq, c, bounds = prepara_input(A_eq, c, bounds)
-        result_revised_simplex = solver(c, A_eq, b_eq, bounds)
+        result_revised_simplex = solver(c, A_eq, b_eq)
 
-        result_text.set(f"Revised Simplex:\n{result_revised_simplex}")
+        result_text.set(f"Coeficientes \n{result_revised_simplex['solution']}\n\nValor objetivo: {result_revised_simplex['objective_value']}\n\nStatus: {result_revised_simplex['status']}")
     except Exception as e:
         messagebox.showerror("Error", f"An error occurred: {e}")
 
