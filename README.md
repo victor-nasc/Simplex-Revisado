@@ -1,8 +1,18 @@
 # Calculadora de Simplex 
 
-O método **Simplex Revisado** é uma versão otimizada do algoritmo Simplex clássico utilizado para resolver problemas de **programação linear**. Ele manipula apenas as colunas da base em cada iteração, reduzindo o custo computacional.
+A construção dessa calculadora foi feita apenas usando `Numpy` para os cálculos do método e `Tkinter` para a construção da interface
+
+<img src="./print.png" alt="img" width="300">
+
+Rodar o programa
+```
+pip install numpy tk
+python3 main.py
+```
 
 ## Formulação do Problema
+
+O método **Simplex Revisado** é uma versão otimizada do algoritmo Simplex clássico utilizado para resolver problemas de **programação linear**. Ele manipula apenas as colunas da base em cada iteração, reduzindo o custo computacional.
 
 Um problema de programação linear pode ser representado na forma:
 
